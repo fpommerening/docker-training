@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace FP.DockerTraining.Configs
+namespace FP.DockerTraining.Microservice.Time
 {
     public class Program
     {

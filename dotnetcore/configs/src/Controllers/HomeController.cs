@@ -1,18 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
-namespace configs.Controllers
+namespace FP.DockerTraining.Configs.Controllers
 {
     public class HomeController : ControllerBase
     {
-        // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        private readonly IConfiguration _cfg;
+
+        public HomeController(IConfiguration cfg)
         {
-            return new string[] { "value1", "value2" };
+            _cfg = cfg;
+        }
+
+        [HttpGet]
+        public ActionResult<string> Index()
+        {
+            return $" Config-Sample {DateTime.Now:G} \n {_cfg["greeting"]}";
         }
 
       
