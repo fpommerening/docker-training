@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.1 AS builder
 
 WORKDIR /app
 COPY src /app
-RUN dotnet restore Configs.csproj
+RUN dotnet restore configs.csproj
 RUN dotnet publish --configuration Release --output ./out
 
 
@@ -16,4 +16,4 @@ COPY --from=builder /app/out/* ./
 
 ENV REFRESHED_AT 2019-04-21
 
-ENTRYPOINT ["dotnet", "Configs.dll"]
+ENTRYPOINT ["dotnet", "configs.dll"]
