@@ -1,0 +1,33 @@
+﻿@model FP.DockerTraining.Microservice.UI.Models.Dashboard;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Microservice - Dashboard</title>
+</head>
+<body>
+    <h3>Microservice Dashboard</h3>
+<br />
+<div style="width: 300px; height: 200px; border-color: black; border-style: dotted; display: inline-block; margin: 20px;padding: 10px">
+    <span style="alignment: center; font-weight: bolder">Time Service</span>
+    <br />
+    <br />
+    Time: @Model.TimeInfo?.Datetime <br />
+    Host: @Model.TimeInfo?.Hostname <br />
+    Language: @Model.TimeInfo?.Lang <br />
+</div>
+<div style="width: 300px; height: 200px; border-color: black; border-style: dotted; display: inline-block;margin: 20px;padding: 10px">
+    <span style="alignment: center;font-weight: bolder">PingMe Service</span>
+    <br />
+    <br />
+    Time: @Model.PingMeInfo?.Kind <br />
+    Last: @Model.PingMeInfo?.Last <br />
+    Language: @Model.PingMeInfo?.Lang <br />
+</div>
+
+<br />
+<br />
+Current-UI: @Model.UiNow
+</body>
+</html>
