@@ -25,6 +25,7 @@ class TimeInfo implements JsonSerializable {
         return 
         [
             'hostname' => $this->getHostname(),
+            'lang' => 'php',
             'datetime' => $this->getDateTime()->format(DateTimeInterface::W3C)
         ];
     }

@@ -13,7 +13,8 @@ namespace FP.DockerTraining.Microservice.Time.Containers
             return new TimeInfo
             {
                 Datetime = DateTime.UtcNow,
-                Hostname = Environment.MachineName
+                Hostname = Environment.MachineName,
+                Lang = "dotnetcore";
             };
         }
     }
@@ -21,6 +22,7 @@ namespace FP.DockerTraining.Microservice.Time.Containers
     public class TimeInfo
     {
         public string Hostname { get; set; }
+        public string Lang { get; set; }
         public DateTime Datetime { get; set; }
     }
 }
