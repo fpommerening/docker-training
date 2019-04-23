@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FP.DockerTraining.Microservice.Time.Containers
+namespace FP.DockerTraining.Microservice.Time.Controllers
 {
      [Route("api/[controller]")]
     [ApiController]
@@ -14,7 +14,7 @@ namespace FP.DockerTraining.Microservice.Time.Containers
             {
                 Datetime = DateTime.UtcNow,
                 Hostname = Environment.MachineName,
-                Lang = "dotnetcore";
+                Lang = "dotnetcore"
             };
         }
     }
