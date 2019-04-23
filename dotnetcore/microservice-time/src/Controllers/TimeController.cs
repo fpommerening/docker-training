@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FP.DockerTraining.Microservice.Time.Controllers
 {
-     [Route("api/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class TimeController : ControllerBase
     {
@@ -17,12 +17,5 @@ namespace FP.DockerTraining.Microservice.Time.Controllers
                 Lang = "dotnetcore"
             };
         }
-    }
-
-    public class TimeInfo
-    {
-        public string Hostname { get; set; }
-        public string Lang { get; set; }
-        public DateTime Datetime { get; set; }
     }
 }

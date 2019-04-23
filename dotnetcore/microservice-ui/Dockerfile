@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/core/sdk:2.1 AS builder
 
 WORKDIR /app
 COPY src /app
-RUN dotnet restore Microservice-PingMe.csproj
+RUN dotnet restore Microservice-UI.csproj
 RUN dotnet publish --configuration Release --output ./out
 
 
@@ -16,4 +16,4 @@ COPY --from=builder /app/out/* ./
 
 ENV REFRESHED_AT 2019-04-23
 
-ENTRYPOINT ["dotnet", "Microservice-PingMe.dll"]
+ENTRYPOINT ["dotnet", "Microservice-UI.dll"]
