@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.438
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Secrets", "secrets\src\Secrets.csproj", "{FDAC9937-A8F8-4031-A9EF-5AEA0F0CB111}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice-PingMe", "microservice-pingme\src\Microservice-PingMe.csproj", "{53EB4886-0DEC-43F3-B32C-B0EE0D5B8B65}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice-UI", "microservice-ui\src\Microservice-UI.csproj", "{0B80CCF8-56D3-44B7-9D21-F8F75EC2DD6A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messages", "messages\src\Messages.csproj", "{CE590321-7968-4E86-9098-FB5BFCAC806D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,18 @@ Global
 		{0B80CCF8-56D3-44B7-9D21-F8F75EC2DD6A}.Release|x64.Build.0 = Release|Any CPU
 		{0B80CCF8-56D3-44B7-9D21-F8F75EC2DD6A}.Release|x86.ActiveCfg = Release|Any CPU
 		{0B80CCF8-56D3-44B7-9D21-F8F75EC2DD6A}.Release|x86.Build.0 = Release|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Debug|x64.Build.0 = Debug|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Debug|x86.Build.0 = Debug|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Release|x64.Build.0 = Release|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Release|x86.ActiveCfg = Release|Any CPU
+		{CE590321-7968-4E86-9098-FB5BFCAC806D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
