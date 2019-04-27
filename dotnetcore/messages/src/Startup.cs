@@ -11,8 +11,8 @@ namespace FP.DockerTraining.Messages
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            services.AddTransient<IMessageRepository>(provider => new MessageRepository("mongodb://localhost:27017/messagedb"));
+            var cnn = EnvironmentVariable.GetValueOrDefault("MessageConnectionString", "mongodb://localhost");
+            services.AddTransient<IMessageRepository>(provider => new MessageRepository(cnn));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
