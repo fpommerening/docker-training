@@ -16,7 +16,7 @@ namespace FP.DockerTraining.Configs.Controllers
         [HttpGet]
         public ActionResult<string> Index()
         {
-            return $" Config-Sample {DateTime.Now:G} \n {_cfg["greeting"]}";
+            return $"Config-Sample {DateTime.Now:G} \n {_cfg["greeting"]}";
         }
 
       
