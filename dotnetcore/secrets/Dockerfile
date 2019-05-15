@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:2.1 AS builder
+FROM mcr.microsoft.com/dotnet/core/sdk:2.1-stretch AS builder
 
 WORKDIR /app
 COPY src /app
